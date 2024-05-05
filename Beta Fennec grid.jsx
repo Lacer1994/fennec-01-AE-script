@@ -1,7 +1,6 @@
 function myScript(thisObj){
       function myScript_buildUI(thisObj){
         var gridFENNEC = (thisObj instanceof Panel) ? thisObj : new Window("palette", "Dockable Script", undefined, {resizeable:true, closeButton: false});
-        // Crea una finestra di dialogo
         gridFENNEC.size = [190,290];
         gridFENNEC.minSize = [170,290];
 
@@ -72,7 +71,6 @@ function myScript(thisObj){
         
         var runButton = mainGroup.add("button", undefined, "Create the FENNEC grid");
         runButton.size = [140, 30]
-        // var runButtonG = runButton.graphics;
 
         dropdownList.onChange = function() {
             var selectedOption = this.selection.text;
@@ -96,22 +94,16 @@ function myScript(thisObj){
                 //alert(dropdownListAlert);
 
                 if (validaInput(inputValxD)) {
-                    // Esegui azione desiderata con il numero inserito
                     alert(inputValxD + " is NOT a number");
                 } else if (validaInput(inputValyD)) {
-                    // Esegui azione desiderata con il numero inserito
                     alert(inputValyD + " is NOT a number");
                 } else if (validaInput(inputValxN)) {
-                    // Esegui azione desiderata con il numero inserito
                     alert(inputValxN + " is NOT a number");
                 } else if (validaInput(inputValyN)) {
-                    // Esegui azione desiderata con il numero inserito
                     alert(inputValyN + " is NOT a number");
                 } else if (validaInput(inputValS)) {
-                    // Esegui azione desiderata con il numero inserito
                     alert(inputValS + " is NOT a number");
                 } else if (inputValxN < 1 || inputValxD < 1 || inputValyN < 1 || inputValyD < 1 || inputValS < 1) {
-                    // Esegui azione desiderata con il numero inserito
                     alert("All numbers must higher than 0");
                 } else {
                     createGrid(inputValxN,inputValyN,inputValxD,inputValyD,inputValS,dropdownListAlert,chekedClamp);
