@@ -1,0 +1,15 @@
+How to install a UI script in After Effects
+1) Download the .jsx or .jsxbin script file.
+
+2) Copy the file into the After Effects Scripts UI Panels folder:
+
+- Windows: C:\Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts\ScriptUI Panels\
+
+- macOS: /Applications/Adobe After Effects <version>/Scripts/ScriptUI Panels/
+
+3) Launch or restart After Effects.
+
+4) Go to Window in the top menu and select your script (e.g., FENNEC Grid Script) to open it as a dockable panel.
+
+5) (Optional) Enable scripts to run without warning:
+Edit > Preferences > Scripting & Expressions and check Allow Scripts to Write Files and Access Network.
